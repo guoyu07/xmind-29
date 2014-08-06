@@ -7,6 +7,12 @@ gem 'autoprefixer-rails'
 
 gem 'simple_form'
 
+## Authentication
+
+gem 'devise'
+
+## Authorization
+
 ## Testing
 
 group :development, :test do

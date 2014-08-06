@@ -13,6 +13,8 @@ gem 'devise'
 
 ## Authorization
 
+gem 'pundit'
+
 ## Testing
 
 group :development, :test do

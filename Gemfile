@@ -7,15 +7,17 @@ gem 'autoprefixer-rails'
 
 ## Testing
 
-group: :development, :test do
+group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+  gem 'capybara'
 end
 
 
 ## Use unicorn as the app server
 gem 'unicorn'
 
-group: :production do
+group :production do
   gem 'pg'
   gem 'rails_12factor'
 end

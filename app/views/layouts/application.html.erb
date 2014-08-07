@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Xmind</title>
+  <meta charset="utf-8">
+  <title>XanderMiller.ca</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <%= link_to :root do %>
+      <h1>Xander Miller</h1>
+      <h2>Developer</h2>
+    <% end %>
+    <%= render 'layouts/navbar' %>
+  </header>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   <%= yield %>
-
+  <footer>
+    <p>&copy; 2014 Xander Miller</p>
+  </footer>
 </body>
 </html>

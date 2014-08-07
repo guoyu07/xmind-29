@@ -2,16 +2,19 @@ require "spec_helper"
 
 RSpec.describe WelcomeController, :type => :controller do
 
-  describe "GET home" do
-    it "returns http success" do
-      get :home
-      expect(response).to be_success
-    end
+  welcomes = %w{home portfolio about contact}
 
-    it "renders the home template" do
-      get :home
-      expect(response).to render_template("home")
+  welcomes.each do |welcome|
+    describe "GET #{welcome}" do
+      it "returns http success" do
+        get welcome.to_sym
+        expect(response).to be_success
+      end
+
+      it "renders the #{welcome} template" do
+        get welcome.to_sym
+        expect(response).to render_template(welcome)
+      end
     end
   end
-
 end

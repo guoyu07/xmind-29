@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+
   def home
   end
 
@@ -10,4 +11,6 @@ class WelcomeController < ApplicationController
 
   def contact
   end
+
+  
 end

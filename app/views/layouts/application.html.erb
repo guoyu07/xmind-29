@@ -8,24 +8,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <%= link_to :root do %>
-      <h1>Xander Miller</h1>
-      <h2>Developer</h2>
-    <% end %>
-    <%= render 'layouts/navbar' %>
-  </header>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <%= yield %>
-  <footer>
-    <a href="https://twitter.com/PareidoliaX">
-      <img src="https://s3-us-west-2.amazonaws.com/xander-mind/twitter-wrap.png" alt="Twitter Logo"/>
-    </a>
-    <a href="https://www.facebook.com/xander.miller">
-      <img src="https://s3-us-west-2.amazonaws.com/xander-mind/facebook-wrap.png" alt="Facebook Logo"/>
-    </a>
-    <p>&copy; 2014 Xander Miller</p>
-  </footer>
+  <div class='container'>
+    <header>
+      <%= link_to :root do %>
+        <h1>Xander Miller</h1>
+        <h2>Developer</h2>
+      <% end %>
+      <%= render 'layouts/navbar' %>
+    </header>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+    <footer>
+      <a href="https://twitter.com/PareidoliaX">
+        <img src="https://s3-us-west-2.amazonaws.com/xander-mind/twitter-wrap.png" alt="Twitter Logo"/>
+      </a>
+      <a href="https://www.facebook.com/xander.miller">
+        <img src="https://s3-us-west-2.amazonaws.com/xander-mind/facebook-wrap.png" alt="Facebook Logo"/>
+      </a>
+      <p>&copy; 2014 Xander Miller</p>
+    </footer>
+  </div>
 </body>
 </html>

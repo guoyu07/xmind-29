@@ -1,7 +1,11 @@
 module ApplicationHelper
 
-  def active_status action
-    action.to_s == action_name ? "active" : ""
+  def controller_action_name
+    "#{controller_name}##{action_name}"
+  end
+
+  def display_active controller_action
+    controller_action == controller_action_name ? "active" : ""
   end
 
 end

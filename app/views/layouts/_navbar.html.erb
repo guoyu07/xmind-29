@@ -1,7 +1,7 @@
 <nav>
   <ul class="nav nav-pills">
-    <%= content_tag :li, link_to("Portfolio", welcome_portfolio_path), class: "#{active_status(:portfolio)}" %>
-    <%= content_tag :li, link_to("About", welcome_about_path), class: "#{active_status(:about)}" %>
-    <%= content_tag :li, link_to("Contact", welcome_contact_path), class: "#{active_status(:contact)}" %>
+    <%= content_tag :li, link_to("Portfolio", welcome_portfolio_path), class: display_active('welcome#portfolio') %>
+    <%= content_tag :li, link_to("About", welcome_about_path), class: display_active('welcome#about') %>
+    <%= content_tag :li, link_to("Contact", welcome_contact_path), class: display_active('welcome#contact') %>
   </ul>
 </nav>

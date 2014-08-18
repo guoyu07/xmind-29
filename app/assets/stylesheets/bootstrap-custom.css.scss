@@ -1,11 +1,42 @@
+$brand-primary: #df7934;
+
+/*************************
+Header Styles
+**************************/
 header {
+  padding: 20px 0;
   text-align: center;
-  background: #6ab47b;
-  border-color: #599a68;
+  background: $px-dark-orange;
+  h1 {
+    font-size: 4.5em;
+    font-family: $px-font;
+    margin: 0;
+  }
+  h2 {
+    margin: -5px 0 20px 0;
+  }
   h1, h2, a {
     color: #fff;
   }
-  nav a, nav a:visited {
-    background: #599a68;
+  a:hover {
+    text-decoration: none;
   }
+}
+
+nav {
+  padding: 10px 5px;
+  background-color: $px-aqua;
+  li {
+    margin: 0 5px;
+  }
+}
+
+/*************************
+Footer Styles
+**************************/
+
+footer {
+  padding: 20px 0 0;
+  color: #fff;
+  background: $px-dark-orange;
 }

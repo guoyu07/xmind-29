@@ -41,11 +41,12 @@ footer {
   padding: 5pc 0 0;
   color: #fff;
   background: $px-dark-orange;
+  min-height: 24pc;
 
   p {
     display: block;
-    padding: 0 1pc 1pc;
-    clear: both;
+    margin: 1pc;
+    padding: 1pc;
   }
 
   em {
@@ -54,14 +55,17 @@ footer {
     font-family: $px-font;
   }
   nav {
-    max-height: 30%;
+    display: block;
+    float: left;
   }
 
   nav #social-media {
     list-style: none;
     margin: 0 1pc;
-    padding: 0;
+    padding: 0 1pc;
     display: block;
+    height: 18pc;
+    width: 18pc;
 
 
     li {

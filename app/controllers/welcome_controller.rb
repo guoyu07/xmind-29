@@ -12,5 +12,8 @@ class WelcomeController < ApplicationController
   def contact
   end
 
+  def shopify
+  end
+
   
 end

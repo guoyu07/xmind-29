@@ -9,15 +9,14 @@
 </head>
 <body>
   <div class='container'>
-    <header>
+    <header class='row'>
       <%= link_to :root do %>
         <h1>Xander Miller</h1>
         <h2>Samurai Web Developer</h2>
       <% end %>
       <%= render 'layouts/navbar' %>
     </header>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render 'layouts/flash' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
   </div>

@@ -1,8 +1,9 @@
-<nav>
-  <ul class="nav nav-pills">
-    <%= content_tag :li, link_to("Home", root_path), class: display_active('welcome#home') %>
-    <%= content_tag :li, link_to("Portfolio", welcome_portfolio_path), class: display_active('welcome#portfolio') %>
-    <%= content_tag :li, link_to("About", welcome_about_path), class: display_active('welcome#about') %>
-    <%= content_tag :li, link_to("Contact", welcome_contact_path), class: display_active('welcome#contact') %>
-  </ul>
-</nav>
+
+  <nav>
+    <ul class="nav nav-pills">
+      <%= content_tag :li, link_to("Home", root_path), class: display_active('welcome#home') %>
+      <%= content_tag :li, link_to("Portfolio", welcome_portfolio_path), class: display_active('welcome#portfolio') %>
+      <%= content_tag :li, link_to("About", welcome_about_path), class: display_active('welcome#about') %>
+      <%= content_tag :li, link_to("Contact", welcome_contact_path), class: display_active('welcome#contact') %>
+    </ul>
+  </nav>

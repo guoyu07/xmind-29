@@ -10,9 +10,10 @@
     ["Twitter", "twitter-256.png", "https://twitter.com/PareidoliaX"],
     ["Facebook", "facebook-256.png", "https://www.facebook.com/xander.miller"]
     ] %>
-    <div class="row">
+  <div class="row" id="social-media">
+    <div class=".col-md-6 col-md-offset-2">
       <nav>
-        <ul id="social-media">
+        <ul id="social-media-list">
           <% social_media.each do |media| %>
             <li>
               <%= link_to media[2] { image_tag("https://s3-us-west-2.amazonaws.com/xander-mind/#{media[1]}", alt: "#{media[0]} Logo")} %>
@@ -21,7 +22,8 @@
         </ul>
       </nav>
     </div>
+  </div>
   <div class="row">
-    <p class="text-right">&copy; 2014 <em>Xander Miller</em></p>
+    <p>&copy; 2014 <em>Xander Miller</em></p>
   </div>
 </footer>

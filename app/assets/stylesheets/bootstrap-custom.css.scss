@@ -4,16 +4,17 @@ $brand-primary: #df7934;
 Header Styles
 **************************/
 header {
-  padding: 20px 0;
+  padding: 2pc 0 0 0;
   text-align: center;
   background: $px-dark-orange;
+  margin: 1pc;
   h1 {
     font-size: 4.5em;
     font-family: $px-font;
     margin: 0;
   }
   h2 {
-    margin: -5px 0 20px 0;
+    margin: -6pt 0 18pt 0;
   }
   h1, h2, a {
     color: #fff;
@@ -23,27 +24,38 @@ header {
   }
 
   nav {
-  padding: 10px 5px;
+  padding: 1pc 6pt;
   background-color: $px-aqua;
     li {
-      margin: 0 5px;
+      margin: 0 6pt;
     }
   }
 }
 
+/*************************
+Section Styles
+**************************/
 
+#pareidoliax {
+  max-width: 30%;
+  max-height: 20pc;
+}
 
 /*************************
 Footer Styles
 **************************/
 
 footer {
-  padding: 5pc 0 0;
-  color: #fff;
-  background: $px-dark-orange;
-  min-height: 24pc;
+  padding: 1pc 0 0;
+  
+  #social-media {
+    color: #fff;
+    background: $px-dark-orange;
+    padding: 1pc;
+  }
 
   p {
+    text-align: center;
     display: block;
     margin: 1pc;
     padding: 1pc;
@@ -56,16 +68,17 @@ footer {
   }
   nav {
     display: block;
-    float: left;
+    margin: 0 auto;
+    
   }
 
-  nav #social-media {
+  nav #social-media-list {
     list-style: none;
     margin: 0 1pc;
     padding: 0 1pc;
     display: block;
-    height: 18pc;
-    width: 18pc;
+    max-height: 18pc;
+    max-width: 100%;
 
 
     li {

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'welcome#contact'
   get 'shopify', to: 'welcome#shopify'
 
-  root 'welcome#home'
+  root 'welcome#about'
 
 
 end

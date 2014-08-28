@@ -1,5 +1,15 @@
 $brand-primary: #df7934;
 
+body {
+  background-image: url(https://s3-us-west-2.amazonaws.com/xander-mind/unsplash_moutain_path.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgba(255,255,255,0.6);
+}
+
+
 /*************************
 Header Styles
 **************************/
@@ -7,7 +17,7 @@ header {
   padding: 2pc 0 0 0;
   text-align: center;
   background: $px-dark-orange;
-  margin: 1pc;
+  margin: 0;
   h1 {
     font-size: 4.5em;
     font-family: $px-font;
@@ -35,10 +45,12 @@ header {
 /*************************
 Section Styles
 **************************/
+section {
+  padding: 1pc;
+}
 
 #pareidoliax {
-  max-width: 30%;
-  max-height: 20pc;
+  max-height: 30pc;
 }
 
 /*************************

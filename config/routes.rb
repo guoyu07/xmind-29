@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'portfolio', to: 'welcome#portfolio', as: 'welcome_portfolio'
-  get 'about', to: 'welcome#about', as: 'welcome_about'
-  get 'contact', to: 'welcome#contact', as: 'welcome_contact'
-  get 'shopify', to: 'welcome#shopify', as: 'welcome_shopify'
+  get 'portfolio', to: 'welcome#portfolio'
+  get 'about', to: 'welcome#about'
+  get 'contact', to: 'welcome#contact'
+  get 'shopify', to: 'welcome#shopify'
 
   root 'welcome#home'
 

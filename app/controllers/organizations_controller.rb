@@ -12,7 +12,7 @@ class OrganizationsController < ApplicationController
   end
 
   def update
-    if @organization.update_attributes(organization_params)
+    if @organization.update_attributes organization_params
       flash[:notice] = "Organization updated successfully"
       redirect_to @organization
     else
@@ -26,7 +26,7 @@ class OrganizationsController < ApplicationController
   end
 
   def create
-    @organization = Organization.build(organization_params)
+    @organization = Organization.new organization_params
 
     if @organization.save
       flash[:notice] = "New Organization Create"
@@ -35,13 +35,12 @@ class OrganizationsController < ApplicationController
       flash[:error] = "Error saving new Organization"
       render :new
     end
-
   end
 
   def destroy
     if @organization.destroy
       flash[:notice] = "Organization Removed"
-      redirect_to :index
+      redirect_to organizations_path
     else
       flash[:error] = "Error Removing Organization"
       render :show

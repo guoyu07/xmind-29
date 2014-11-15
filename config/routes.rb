@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   root 'welcome#about'
 
-  resources :people
+  #resources :people
   resources :organizations
 
 

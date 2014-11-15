@@ -1,0 +1,9 @@
+<% organization = organization_row %>
+<tr>
+  <td><%= organization.name %></td>
+  <td><%= organization.website %></td>
+  <td>
+    <%= link_to 'Edit', edit_organization_path(organization), class: 'bth btn-primary btn-sm' %>
+    <%= link_to 'Remove', organization, method: :delete, class: 'bth btn-danger btn-sm' %>
+  </td>
+</tr>

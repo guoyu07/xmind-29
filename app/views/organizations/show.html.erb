@@ -1,2 +1,3 @@
-<h1>Organizations#show</h1>
-<p>Find me in app/views/organizations/show.html.erb</p>
+<h1><%= @organization.name %></h1>
+<p><strong>Website:</strong><%= @organization.website %></p>
+<%= link_to 'Organization List', organizations_path, class: "btn btn-primary" %>

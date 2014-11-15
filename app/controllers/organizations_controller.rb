@@ -12,21 +12,50 @@ class OrganizationsController < ApplicationController
   end
 
   def update
+    if @organization.update_attributes(organization_params)
+      flash[:notice] = "Organization updated successfully"
+      redirect_to @organization
+    else
+      flash[:error] = "Error updating Organization"
+      render :edit
+    end
   end
 
   def new
+    @organization = Organization.new
   end
 
   def create
+    @organization = Organization.build(organization_params)
+
+    if @organization.save
+      flash[:notice] = "New Organization Create"
+      redirect_to @organization
+    else
+      flash[:error] = "Error saving new Organization"
+      render :new
+    end
+
   end
 
   def destroy
+    if @organization.destroy
+      flash[:notice] = "Organization Removed"
+      redirect_to :index
+    else
+      flash[:error] = "Error Removing Organization"
+      render :show
+    end
   end
 
   private
 
   def find_organization
     @organization = Organization.find params[:id]
+  end
+
+  def organization_params
+    params.require(:organization).permit(:name, :website)
   end
 
 end

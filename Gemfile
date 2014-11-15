@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 # Ruby Version
 
-ruby '2.0.0'
+ruby '2.1.3'
 
 # Customizations
 
@@ -18,10 +18,17 @@ gem 'devise'
 
 gem 'pundit'
 
+## Better Errors
+
+group :development do
+  gem "better_errors"
+end
+gem "binding_of_caller"
+
 ## Testing
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.14.0'
+  gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'sqlite3'

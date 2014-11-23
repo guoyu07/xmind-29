@@ -1,12 +1,13 @@
 $brand-primary: #df7934;
 
 body {
-  background-image: url(https://s3-us-west-2.amazonaws.com/xander-mind/unsplash_moutain_path.jpg);
-  background-repeat: no-repeat;
+  background-color: $px-kolbolt;
+  // background-image: url(https://s3-us-west-2.amazonaws.com/xander-mind/unsplash_moutain_path.jpg);
+  // background-repeat: no-repeat;
 }
 
 .container {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.8);
 }
 
 

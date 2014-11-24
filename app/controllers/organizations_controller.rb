@@ -1,4 +1,5 @@
 class OrganizationsController < ApplicationController
+
   before_action :find_organization, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -6,6 +7,16 @@ class OrganizationsController < ApplicationController
   end
 
   def show
+  end
+
+  def hello
+    @organization = Organization.find_by_sigil params[:sigil]
+    if @organization
+      @body = @organization.hello_markdown
+    else
+      flash[:error] = 'Organization not found.'
+      redirect_to root_path
+    end
   end
 
   def edit

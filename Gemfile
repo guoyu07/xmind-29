@@ -5,25 +5,31 @@ ruby '2.1.3'
 
 # Customizations
 
+## Twitter Bootstrap with SASS Support
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
-gem 'simple_form'
+
+## Simple Form Release Candidate with Bootstrap 3 Support
+gem 'simple_form', git: 'git@github.com:plataformatec/simple_form.git', ref: '1be4d64ce16d29c316e2d6c297ed7be248126057'
 
 ## Authentication
-
 gem 'devise'
 
 ## Authorization
-
 gem 'pundit'
 
-## Better Errors
+## PRY as REPL
+gem 'pry'
 
 group :development do
+  ## Better Errors
   gem "better_errors"
+  gem "binding_of_caller"
+  ## Pry in Rails Console
+  gem 'pry-rails'
 end
-gem "binding_of_caller"
+
 
 ## Testing
 
@@ -34,9 +40,11 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+#Markdown Rendering
+gem 'redcarpet'
 
 ## Use unicorn as the app server
-gem 'unicorn'
+#gem 'unicorn'
 
 group :production do
   gem 'pg'

@@ -1,3 +1,4 @@
+
 #Hello Shopify Team!
 
 My name is Xander Miller, and if you click on the various social media links in the footer you can find out more about my online foot print. But I would like to give you a more well rounded idea of who I am by talking about three 'P' words: Passions, People and Projects.
@@ -47,8 +48,9 @@ Are something else I'm passionate about. A big reason why I love open source sof
 + Katrina Verey
 
 ##Projects
-Ah, projects 
+Help people be awesome.
 
+**Thanks for checking me out!**
 
 
 What's special about me

@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'contact', to: 'welcome#contact'
   get 'shopify', to: 'welcome#shopify'
 
+  get 'hello/:sigil', to: 'organizations#hello'
+
   root 'welcome#about'
 
   #resources :people

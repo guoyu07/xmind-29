@@ -3,6 +3,7 @@ class Organization < ActiveRecord::Base
 
   def hello_markdown
     file_path = File.join(Rails.root,'public','hellos',"#{sigil}.md")
+    return "#File '#{sigil}.md' not found." unless File.exist? file_path
     file_text = ''
     File.open(file_path, "r") do |f|
       f.each_line do |line|

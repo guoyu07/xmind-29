@@ -11,7 +11,7 @@ gem 'autoprefixer-rails'
 
 
 ## Simple Form Release Candidate with Bootstrap 3 Support
-gem 'simple_form', git: 'git@github.com:plataformatec/simple_form.git', ref: '1be4d64ce16d29c316e2d6c297ed7be248126057'
+gem 'simple_form', git: 'https://github.com/plataformatec/simple_form', ref: '1be4d64ce16d29c316e2d6c297ed7be248126057'
 
 ## Authentication
 gem 'devise'
